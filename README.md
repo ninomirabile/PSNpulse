@@ -73,3 +73,33 @@ Body: { ... }
 - [x] Logout e flusso utente chiaro
 - [ ] Multi-tenant per PA
 - [ ] Integrazione API reali
+
+### **Cosa significa?**
+- `npm ci` richiede che il file `package-lock.json` sia presente nella cartella `frontend/`.
+- Se manca, la pipeline fallisce.
+
+---
+
+## **Soluzione**
+
+1. **Genera il file `package-lock.json` nella cartella `frontend/`:**
+   ```bash
+   cd frontend
+   npm install
+   git add package-lock.json
+   git commit -m "chore(frontend): aggiungi package-lock.json per pipeline CI"
+   git push
+   ```
+
+2. **Verifica che il file sia presente su GitHub**  
+   Dopo il push, la pipeline CI funzionerà e `npm ci` andrà a buon fine.
+
+---
+
+**Nota:**  
+- `package-lock.json` va sempre versionato per progetti Node.js che usano CI/CD.
+- Non serve aggiungere altro: la pipeline funzionerà subito dopo il push.
+
+---
+
+**Vuoi che esegua questi comandi per te e prepari il commit?**
