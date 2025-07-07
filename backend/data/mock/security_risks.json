@@ -1,0 +1,44 @@
+{
+  "risk_level": "critical",
+  "tips": [
+    "Abilita la crittografia end-to-end per tutti i dati in transito e a riposo",
+    "Implementa autenticazione forte (MFA) per tutti gli operatori",
+    "Esegui penetration test trimestrali",
+    "Aggiorna regolarmente tutte le dipendenze di terze parti",
+    "Monitora e limita gli accessi privilegiati",
+    "Applica patch di sicurezza entro 48h dalla pubblicazione",
+    "Segmenta la rete tra servizi clinici e amministrativi",
+    "Abilita il logging avanzato e la SIEM integration",
+    "Esegui backup cifrati giornalieri e test di restore mensili",
+    "Verifica la compliance NIS2 e ISO27001",
+    "Esegui vulnerability scan automatici settimanali",
+    "Definisci un piano di risposta agli incidenti aggiornato"
+  ],
+  "vulnerabilities": [
+    {"type": "Data Exposure", "severity": "critical", "status": "open", "description": "Dati pazienti accessibili via API legacy.", "discovered_date": "2025-06-01T00:00:00", "resolution_date": null},
+    {"type": "Access Control", "severity": "high", "status": "in_progress", "description": "Ruoli non applicati su endpoint amministrativi.", "discovered_date": "2025-05-15T00:00:00", "resolution_date": null},
+    {"type": "Outdated Library", "severity": "medium", "status": "open", "description": "jQuery 3.4.1 usata in UI legacy.", "discovered_date": "2025-04-10T00:00:00", "resolution_date": null},
+    {"type": "Weak Password Policy", "severity": "low", "status": "resolved", "description": "Policy aggiornata a 14+ caratteri e MFA.", "discovered_date": "2025-03-01T00:00:00", "resolution_date": "2025-03-10T00:00:00"},
+    {"type": "Unencrypted Backup", "severity": "critical", "status": "open", "description": "Backup notturni non cifrati.", "discovered_date": "2025-06-10T00:00:00", "resolution_date": null},
+    {"type": "SQL Injection", "severity": "high", "status": "open", "description": "Endpoint /patient/search vulnerabile a SQLi.", "discovered_date": "2025-06-20T00:00:00", "resolution_date": null},
+    {"type": "Phishing Incident", "severity": "medium", "status": "resolved", "description": "Campagna phishing bloccata, nessun dato esfiltrato.", "discovered_date": "2025-05-01T00:00:00", "resolution_date": "2025-05-02T00:00:00"},
+    {"type": "Ransomware Attempt", "severity": "critical", "status": "in_progress", "description": "Tentativo di ransomware bloccato, analisi in corso.", "discovered_date": "2025-06-25T00:00:00", "resolution_date": null},
+    {"type": "Misconfigured Firewall", "severity": "high", "status": "open", "description": "Regole firewall troppo permissive su subnet interna.", "discovered_date": "2025-06-15T00:00:00", "resolution_date": null},
+    {"type": "Unpatched OS", "severity": "medium", "status": "in_progress", "description": "Server Windows non aggiornati all'ultimo patch Tuesday.", "discovered_date": "2025-06-05T00:00:00", "resolution_date": null}
+  ],
+  "compliance_status": {
+    "gdpr": "compliant",
+    "hipaa": "pending",
+    "iso27001": "in_progress",
+    "psn_security": "compliant",
+    "nis2": "in_progress",
+    "agid": "compliant"
+  },
+  "last_assessment": "2025-06-30T08:00:00Z",
+  "next_assessment": "2025-09-30T08:00:00Z",
+  "recent_incidents": [
+    {"date": "2025-06-25T00:00:00", "type": "Ransomware Attempt", "impact": "Bloccato, nessun dato cifrato", "status": "analisi in corso"},
+    {"date": "2025-05-01T00:00:00", "type": "Phishing", "impact": "Nessun dato esfiltrato", "status": "risolto"}
+  ],
+  "security_officer": "Ing. Laura Verdi"
+} 

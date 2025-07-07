@@ -1,0 +1,119 @@
+{
+  "progress": 47,
+  "deadline": "2026-06-30",
+  "critical_areas": [
+    "Fascicolo Sanitario Elettronico",
+    "Integrazione Referti Digitali",
+    "Interoperabilità Sistemi Legacy",
+    "Gestione Consensi Pazienti",
+    "Backup e Disaster Recovery",
+    "Telemedicina",
+    "Accesso Mobile",
+    "Performance Applicativa",
+    "Sicurezza GDPR",
+    "Gestione Identità Federata",
+    "Monitoraggio Real-Time"
+  ],
+  "completed_modules": [
+    "Anagrafe Assistiti",
+    "Prenotazioni Online",
+    "Gestione Accessi Pronto Soccorso",
+    "Gestione Ricoveri",
+    "Gestione Farmaci",
+    "Vaccinazioni",
+    "Gestione Laboratori",
+    "Gestione Referti Radiologici"
+  ],
+  "in_progress_modules": [
+    "Fascicolo Sanitario Elettronico",
+    "Telemedicina",
+    "Gestione Consensi Pazienti",
+    "Integrazione Referti Digitali",
+    "Gestione Cartelle Cliniche Digitali"
+  ],
+  "pending_modules": [
+    "Integrazione Laboratori",
+    "Disaster Recovery",
+    "Accesso Mobile",
+    "Gestione Identità Federata",
+    "Monitoraggio Real-Time",
+    "Performance Applicativa"
+  ],
+  "blocked_modules": [
+    "Interoperabilità Sistemi Legacy"
+  ],
+  "milestones": [
+    {
+      "id": "ms-1",
+      "name": "Migrazione Anagrafe Assistiti",
+      "status": "completed",
+      "completion_date": "2024-03-15",
+      "description": "Tutti i dati anagrafici migrati nel cloud PSN."
+    },
+    {
+      "id": "ms-2",
+      "name": "Attivazione Prenotazioni Online",
+      "status": "completed",
+      "completion_date": "2024-05-10",
+      "description": "Sistema di prenotazione visite integrato con PSN."
+    },
+    {
+      "id": "ms-3",
+      "name": "Fascicolo Sanitario Elettronico",
+      "status": "in_progress",
+      "completion_date": null,
+      "description": "Digitalizzazione e migrazione fascicoli clinici."
+    },
+    {
+      "id": "ms-4",
+      "name": "Integrazione Referti Digitali",
+      "status": "in_progress",
+      "completion_date": null,
+      "description": "Referti laboratori e radiologia integrati nel cloud."
+    },
+    {
+      "id": "ms-5",
+      "name": "Gestione Consensi Pazienti",
+      "status": "in_progress",
+      "completion_date": null,
+      "description": "Gestione digitale dei consensi privacy e GDPR."
+    },
+    {
+      "id": "ms-6",
+      "name": "Gestione Identità Federata",
+      "status": "pending",
+      "completion_date": null,
+      "description": "Implementazione autenticazione federata per operatori e cittadini."
+    },
+    {
+      "id": "ms-7",
+      "name": "Disaster Recovery e Backup",
+      "status": "pending",
+      "completion_date": null,
+      "description": "Implementazione procedure di backup e ripristino."
+    },
+    {
+      "id": "ms-8",
+      "name": "Telemedicina",
+      "status": "in_progress",
+      "completion_date": null,
+      "description": "Attivazione servizi di telemedicina e consulti remoti."
+    },
+    {
+      "id": "ms-9",
+      "name": "Accesso Mobile",
+      "status": "pending",
+      "completion_date": null,
+      "description": "Accesso sicuro ai servizi tramite app mobile."
+    },
+    {
+      "id": "ms-10",
+      "name": "Interoperabilità Sistemi Legacy",
+      "status": "blocked",
+      "completion_date": null,
+      "description": "Bloccata per problemi di compatibilità con sistemi storici."
+    }
+  ],
+  "notes": "Alcuni moduli sono bloccati per problemi di interoperabilità. Il team IT sta lavorando con i fornitori per risolvere. Prossima review: settembre 2025.",
+  "responsabile": "Dott. Mario Bianchi"
+} 
